@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kod Oluşturucu</title>
+    <link rel="stylesheet" href="qrcode.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Kod Oluşturucu</h1>
+        <input type="text" id="urlInput" placeholder="QR Kod için URL Girin: ">
+        <button id="generateButton">Oluştur</button>
+        <div id="message" class="hidden">QR Kodunuz oluşturuldu!</div>
+        <div id="qrCodeContainer" class="hidden">
+            <h2>QR Kodunuz:</h2>
+            <div id="qrCode"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="qrcode.js"></script>
+</body>
+</html>
